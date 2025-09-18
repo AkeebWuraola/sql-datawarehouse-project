@@ -82,3 +82,28 @@ It is a set of rules or guidelines for naming anything in the project. whether y
 - camelCase: first word is lower case while following words are capitalized
 - SCREAMING_SNAKE_CASE: Upper snake case
 - UpperCamel also known as PascalCase
+
+## BRONZE LAYER DEVELOPMENT
+<img width="895" height="172" alt="image" src="https://github.com/user-attachments/assets/084d5df3-a9f1-43e4-844f-9dc1ca892b8f" />
+
+There are various questions you can ask while interviewing the source system experts
+
+**Business Context & Ownership**
+- Who owns the data
+- what business process it supports
+- Are there system and data documentation
+- Is there a data model & data catalog or dictionary that can explain the columns
+  
+**Architecture & Technology Stack**
+- How is data stored and where?
+- what are the integration capabilities
+  
+**Extract & Load**
+- Incremental vs Full Loads?
+- Data Scope & Historical Needs
+- Expected size of the extracts
+- are there data volume limitations
+- how to avoid impacting the performance of the source system
+- authentication and authorization(VPN, whitelisting etc)
+
+
