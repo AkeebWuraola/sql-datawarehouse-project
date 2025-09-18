@@ -1,9 +1,9 @@
-# sql-datawarehouse
+# SQL-DataWarehouse
 <p>Build a Robust DataWarehouse</p>
 <p>What is a data warehouse?</p>
 A data warehouse is a subject-oriented(focused on a business area e.g sales, revenue),integrated(data ingestion from multiple sources),time_variant(data lifecycle) and non volatile collection of data in support of management's decision-making process.
 
-## what is ETL?
+## What is ETL?
 ETL is the core element of the data warehouse. Extract-Transform-Load
 
 Extract is identifying the data that is needed from the source system and not changing anything.
@@ -105,5 +105,10 @@ There are various questions you can ask while interviewing the source system exp
 - are there data volume limitations
 - how to avoid impacting the performance of the source system
 - authentication and authorization(VPN, whitelisting etc)
+
+## ETL Practices
+- Add prints: Add prints to track execution, debug issues and understand process flow
+- Error Handling: Adding try..catch ensures error handling,data integrity and issue logging for easier debugging; sql runs the try block and if it fails it runs the catch block to handle the error
+- Track ETL Duration: Helps to identify bottlenecks, optimize performance,monitor trends, detect issues
 
 
