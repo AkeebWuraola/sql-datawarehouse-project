@@ -46,11 +46,11 @@ SQL Reserved words will not be used as object names
 - All primary keys must use suffix _id.
   
 **Technical Columns**
-- Technical columns should start with dw_<column_name>
+- Technical columns should start with dw_<column_name> e.g dw_load_date
 
 **Stored Procedures**
 - All stored procedures must start with stp_load_<layer>
-- 
+
 
 
 
