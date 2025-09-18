@@ -74,3 +74,11 @@ Loading is taking this transformed data and moving it into the target system.
 
 
 <p>Separation of Concerns involve ensuring each layer are divided into distinct parts each responsible for well defined responsibilities. For example, ingestion happens in the bronze layer, transformation and cleaning happens in the silver layer while business logic is applied in the gold layer. Ingestion should not be happening in the silver layer and vice versa</p>
+
+# Naming Convention
+It is a set of rules or guidelines for naming anything in the project. whether you are naming, database,schema,tables or stored procedure. some of the rules involve using only lowercase, using Propercase without underscore . This helps to ensure consistency. some naming conventions are as follows:
+- snake_case: all lowercase and underscore between words
+- kebab-case: a dash separator between words
+- camelCase: first word is lower case while following words are capitalized
+- SCREAMING_SNAKE_CASE: Upper snake case
+- UpperCamel also known as PascalCase
