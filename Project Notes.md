@@ -1,6 +1,6 @@
 # sql-datawarehouse
-Build a Robust DataWarehouse
-What is a data warehouse?
+<p>Build a Robust DataWarehouse</p>
+<p>What is a data warehouse?</p>
 A data warehouse is a subject-oriented(focused on a business area e.g sales, revenue),integrated(data ingestion from multiple sources),time_variant(data lifecycle) and non volatile collection of data in support of management's decision-making process.
 
 ## what is ETL?
@@ -46,7 +46,7 @@ Loading is taking this transformed data and moving it into the target system.
  <li>Batch Processing: Loading the data in one batch and job runs only once to refresh the content of the data warehouse</li>
  <li>Streaming Processing: changes are processes as soon as possible, almost real time </li>
 
- ## Load Methods:
+ ## Load Methods
  <h5>This is similar to extraction methods</h5>
  <li>Full Load: Truncate & Insert; Upsert(Update & Insert); Drop,create & insert</li>
  <li>Incremental Load: Upsert; append(insert); merge(insert or delete)</li>
@@ -56,4 +56,18 @@ Loading is taking this transformed data and moving it into the target system.
   <li>SCD 1: Overwrite, changes are to be overwritten, e.g if a customers status changes from dormant to active, status column should be overwritten</li>
   <li>SCD 2: Historization; if there is any changes, you want to keep the history of the change</li>
   <li>SCD..</li>
-  
+
+  <h1> Data Architecture</h1>
+  <p>There are 4 major types</p>
+  <p>Data Warehouse: Suitable if you have only structured data and business wants to build solid foundation for analysis and reporting</p>
+  <p>Data Lake: This is more flexible, you can store both structured and semi structured data. If you have mixed types of data, like logs, db tables,images,video. It is not as orhanized like a data warehouse</p>
+  <p>Data Lakehouse: Flexibility of having different types of data like data lake but can still structure your data like a data warehouse</p>
+  <p>Data Mesh: In this case you have decentralised data management of system sort of like having multiple departments and multiple domains</p>
+
+  ## How to build data warehouse
+  <p>There are different approaches of building a data warehouse</p>
+  <li><b>Immon:</b> There are 3 layers: Data is ingested into the stage; then into the EDW where transformation is carried out; then datamarts are created that connects to the BI Reports</li>
+  <li><b>Kimball:</b> The EDW layers is removed and data is moved from the staging area to the creation of datamarts. This is a very fast approach however, there is risk of creating isolated transformation logic that should have been reusable</li>
+  <li><b>Data Vault:</b> The EDW Layer is much more encompassing with the transformation being split into raw vault and business vault. Here the business logic and rules is taken into the account during the transformation stage before data marts are created.</li>
+  <li><b>Medallion Architecture:</b> There are 3 layers; bronze, silver and gold. The bronze layer is the stage area where you have the data as is from the source system. The silver layer is where you do transformation and data cleansing but no business rules are applied here. The gold layer is similar to the data mart where you can build different types of data mart that caters for different purposes such as reporting, machine learning, AI</li>
+  <img width="946" height="691" alt="image" src="https://github.com/user-attachments/assets/83bd44d2-8297-4eed-8348-e537671180c2" />
