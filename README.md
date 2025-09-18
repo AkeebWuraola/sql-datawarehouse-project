@@ -26,5 +26,32 @@ This is accessible via [Data Warehouse Project](https://www.notion.so/Data-Wareh
 <p>The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers:</p>
 <img width="892" height="652" alt="image" src="https://github.com/user-attachments/assets/63b4b84d-a02c-4b31-b0b9-64aab4d287f3" />
 
-# Naming Convention
-It is a set of rules or guidelines for naming anything in the project. whether you are naming, database,schema,tables or stored procedure. some of the rules involve using only lowercase, using Propercase without underscore . This helps to ensure consistency. some naming conventions are as follows
+# Naming Convention & General Principles
+It is a set of rules or guidelines for naming anything in the project. whether you are naming, database,schema,tables or stored procedure. some of the rules involve using only lowercase, using Propercase without underscore . This helps to ensure consistency.  
+
+snake case with all lowercase and underscores to separate words will be used for this project  
+English Language will be used  
+SQL Reserved words will not be used as object names
+
+**Bronze & Silver Rules**
+- All names must start with source system name and table names must match their original names from the source i.e <sourcesystem>_(tablename) e.g crm_customersinfo
+  
+**Gold Rules**
+- All names must be meaningful, business aligned names for tables starting with category prefix i.e <category>_<tablename> e.g dim_customers,fact_sales
+- category describes the role of the table; if its a fact (fact) or dimension(dim) table
+
+**Column Naming Convention**
+**Surrogate Keys**
+- Surrogate keys must use siffix _key
+- All primary keys must use suffix _id.
+  
+**Technical Columns**
+- Technical columns should start with dw_<column_name>
+
+**Stored Procedures**
+- All stored procedures must start with stp_load_<layer>
+- 
+
+
+
+
