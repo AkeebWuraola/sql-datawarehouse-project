@@ -70,4 +70,7 @@ Loading is taking this transformed data and moving it into the target system.
   <li><b>Kimball:</b> The EDW layers is removed and data is moved from the staging area to the creation of datamarts. This is a very fast approach however, there is risk of creating isolated transformation logic that should have been reusable</li>
   <li><b>Data Vault:</b> The EDW Layer is much more encompassing with the transformation being split into raw vault and business vault. Here the business logic and rules is taken into the account during the transformation stage before data marts are created.</li>
   <li><b>Medallion Architecture:</b> There are 3 layers; bronze, silver and gold. The bronze layer is the stage area where you have the data as is from the source system. The silver layer is where you do transformation and data cleansing but no business rules are applied here. The gold layer is similar to the data mart where you can build different types of data mart that caters for different purposes such as reporting, machine learning, AI</li>
-  <img width="946" height="691" alt="image" src="https://github.com/user-attachments/assets/83bd44d2-8297-4eed-8348-e537671180c2" />
+  <img width="790" height="553" alt="image" src="https://github.com/user-attachments/assets/d20b48db-d946-469b-9ede-b1194d32d054" />
+
+
+<p>Separation of Concerns involve ensuring each layer are divided into distinct parts each responsible for well defined responsibilities. For example, ingestion happens in the bronze layer, transformation and cleaning happens in the silver layer while business logic is applied in the gold layer. Ingestion should not be happening in the silver layer and vice versa</p>
