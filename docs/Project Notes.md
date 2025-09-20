@@ -111,4 +111,10 @@ There are various questions you can ask while interviewing the source system exp
 - Error Handling: Adding try..catch ensures error handling,data integrity and issue logging for easier debugging; sql runs the try block and if it fails it runs the catch block to handle the error
 - Track ETL Duration: Helps to identify bottlenecks, optimize performance,monitor trends, detect issues
 
+## SILVER LAYER DEVELOPMENT
+<img width="932" height="250" alt="image" src="https://github.com/user-attachments/assets/7fe417aa-70a8-48cd-a0b6-e7b645e1a103" />
+
+-Metadata Columns: are extra columns added by data engineers that do not originate from the source data. it is used in order to provide extra information e.g create_date,update_date,source system etc
+
+
 
