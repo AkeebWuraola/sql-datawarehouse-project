@@ -41,6 +41,7 @@ SQL Reserved words will not be used as object names
 - category describes the role of the table; if its a fact (fact) or dimension(dim) table
 
 **Column Naming Convention**
+
 **Surrogate Keys**
 - Surrogate keys must use suffix _key
 - All primary keys must use suffix _id.
