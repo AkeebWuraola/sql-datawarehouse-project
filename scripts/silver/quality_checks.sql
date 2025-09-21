@@ -1,3 +1,14 @@
+/*
+=====================================================================================
+Sript Purpose:
+This script performs various quality checks to ensure that the transformed data is accurate and consistent. It includes checks for:
+--Duplicate or null primary keys
+--Unwanted Spaces
+-Data Standardization & Normalization
+-Invalid Dates or date range
+=====================================================================================
+*/
+
 ----Silver Quality Check
 -------crm_cust_info---------------
 	--Check for nulls or duplicates in primary key =========Expectation: No result
