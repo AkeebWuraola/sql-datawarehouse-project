@@ -58,3 +58,4 @@ SQL Reserved words will not be used as object names
 
 The data warehouse is successfully delivering a single, reliable source of truth that enables timely, accurate, and actionable insights for decision-making across the organization.
 
+
