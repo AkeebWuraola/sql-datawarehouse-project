@@ -117,4 +117,15 @@ There are various questions you can ask while interviewing the source system exp
 -Metadata Columns: are extra columns added by data engineers that do not originate from the source data. it is used in order to provide extra information e.g create_date,update_date,source system etc
 
 
+## GOLD LAYER DEVELOPMENT
+<img width="1207" height="326" alt="image" src="https://github.com/user-attachments/assets/cceca02a-609f-46cd-ae50-f679a11bc573" />
+
+**Data Modelling**
+
+This is the process of taking raw data and organizing and putting it in a structured and friendly way.
+
+- Cenceptual Data Model: no columns are specified.focus is on entities and the relationship between the entities
+- Logical Data Model: This specifies the columns in each entity and the relationships between the entities
+- Physical Data Model: All technical details are included including the datatypes and their relationships
+
 
