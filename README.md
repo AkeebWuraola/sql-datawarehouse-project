@@ -43,7 +43,7 @@ SQL Reserved words will not be used as object names
 **Column Naming Convention**
 
 **Surrogate Keys**
-- Surrogate keys must use suffix _key
+- Surrogate keys must use suffix _key: surrogate keys are system generated unique identifiers assigned to each record in a table
 - All primary keys must use suffix _id.
   
 **Technical Columns**
