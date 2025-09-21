@@ -128,4 +128,13 @@ This is the process of taking raw data and organizing and putting it in a struct
 - Logical Data Model: This specifies the columns in each entity and the relationships between the entities
 - Physical Data Model: All technical details are included including the datatypes and their relationships
 
+- Star Schema: has a central fact table and several dimension tables.
+- Snowflake Schema: has a fact in the middle and several dimensions attached, while the dimension tables have sub dimension tables
 
+**Fact**
+
+Facts are events, transactions. contains quantitative information that represents events
+
+**Dimension**
+
+Dimension tables contain descriptive information that gives context to your data. who? what? where?
