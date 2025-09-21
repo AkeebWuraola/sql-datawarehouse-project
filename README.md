@@ -42,7 +42,7 @@ SQL Reserved words will not be used as object names
 
 **Column Naming Convention**
 **Surrogate Keys**
-- Surrogate keys must use siffix _key
+- Surrogate keys must use suffix _key
 - All primary keys must use suffix _id.
   
 **Technical Columns**
