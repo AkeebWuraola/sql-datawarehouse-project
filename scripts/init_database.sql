@@ -21,12 +21,16 @@ IF EXISTS (SELECT * FROM sys.databases WHERE name = 'DataWarehouse')
 BEGIN 
 	ALTER DATABASE DataWarehouse SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
 	DROP DATABASE DataWarehouse
+END
+GO
 
 -- Create Database 'DataWarehouse'
 CREATE DATABASE DataWarehouse;
-
+GO
+	
 USE datawarehouse;
-
+GO
+	
 --Create Schemas
 /*A schema is like a folder or container that helps to keep things organized*/
 
